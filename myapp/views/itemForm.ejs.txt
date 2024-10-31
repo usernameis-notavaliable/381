@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title><%= item._id ? 'Edit' : 'Create' %> Item</title>
+</head>
+<body>
+
+<h1><%= item._id ? 'Edit' : 'Create' %> Item</h1>
+
+<form action="<%= item._id ? '/item/' + item._id + '?_method=PUT' : '/item' %>" method="POST">
+   <input type="text" name="name" value="<%= item.name %>" placeholder="Item Name" required>
+   <textarea name="description" placeholder="Description"><%= item.description %></textarea><br/>
+   <button type="submit"><%= item._id ? 'Update' : 'Create' %></button>
+</form>
+
+<a href="/dashboard">Back to Dashboard</a>
+
+</body>
+</html>

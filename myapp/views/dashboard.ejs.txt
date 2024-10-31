@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Dashboard</title>
+</head>
+<body>
+<h1>Dashboard</h1>
+
+<a href="/item/new">Create New Item</a>
+<a href="/logout">Logout</a>
+
+<h2>Items List:</h2>
+<ul>
+   <% items.forEach(item => { %>
+       <li><%= item.name %> - <%= item.description %> 
+           <a href="/item/edit/<%= item._id %>">Edit</a> 
+           <form action="/item/<%= item._id %>?_method=DELETE" method="POST" style="display:inline;">
+               <button type="submit">Delete</button>
+           </form></li>
+   <% }) %>
+</ul>
+
+</body>
+</html>
