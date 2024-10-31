@@ -21,7 +21,7 @@ app.use(cookieSession({
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
-// MongoDB connection (replace 'your_database' with actual database name)
+// MongoDB connection (replace with actual database name)
 mongoose.connect('mongodb+srv://', { useNewUrlParser: true, useUnifiedTopology: true });
 
 // Routes
