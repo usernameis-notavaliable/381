@@ -1,1 +1,32 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "A simple web application using Express.js, MongoDB, and EJS for user authentication and CRUD operations.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "mongodb",
+    "ejs",
+    "crud",
+    "authentication"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.9",
+    "cookie-session": "^8.2.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
 
