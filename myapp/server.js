@@ -22,7 +22,7 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 // MongoDB connection (replace with actual database name)
-mongoose.connect('mongodb+srv://admin:admin@cluster0.mlfbzer.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://', { useNewUrlParser: true, useUnifiedTopology: true });
 
 // Routes
 
